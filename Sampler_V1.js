@@ -1,15 +1,20 @@
 //https://github.com/borelbox/Sampler_1.0.git
 //PICAPIEDRA'S BOARD
+var canvas;
+var canvW = 412;
+var canvH = 2000;
+var canvX = 0;
+var canvY = 0;
 
-
-var gapX1 = 20;
-var gapY1 = 50;
+var gapX1 = canvX + 20;
+var gapY1 = canvY + 50;
 var gapX2 = 4;
 var gapY2 = 4;
 var btnSizeX = 120;
 var btnSizeY = 60;
 var gapX3 = gapX2 + btnSizeX;
 var gapY3 = gapY2 + btnSizeY;
+
 
 function loaded() {
   console.log("AUDIO FILES LOADED");
@@ -98,14 +103,15 @@ function preload() {
 
 
 function setup() {
-  var canvas = createCanvas(412, 2000);
-  background(0);
+  var canvas = createCanvas(canvW, canvH);
+  canvas.position(canvX,canvY);
+  background(30);
 
   textSize(30);
   fill(100);
   textFont('Helvetica');
-  textAlign(CENTER,CENTER);
-  text("PICAPIEDRA'S BOARD", canvas.width/2, 40);
+  textAlign(CENTER, CENTER);
+  text("TOP BOARD", canvas.width/2, 40);
 
 
   playBtn1 = createButton('Eso si que le puedes decir!');
