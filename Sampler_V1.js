@@ -111,7 +111,7 @@ function setup() {
   fill(200);
   textFont('Arial');
   textAlign(CENTER, CENTER);
-  text("TOP BOARD(ER)", canvas.width/2, 40);
+  text("TOP BOARD", canvas.width/2, 40);
 
 
   playBtn1 = createButton('Eso si que le puedes decir!');
