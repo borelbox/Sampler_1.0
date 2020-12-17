@@ -8,6 +8,8 @@ var gapX2 = 4;
 var gapY2 = 4;
 var btnSizeX = 120;
 var btnSizeY = 60;
+var gapX3 = gapX2 + btnSizeX;
+var gapY3 = gapY2 + btnSizeY;
 
 function loaded() {
   console.log("AUDIO FILES LOADED");
@@ -96,7 +98,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(1030, 800);
+  createCanvas(410, 2000);
   background(0);
 
   textSize(30);
@@ -105,373 +107,391 @@ function setup() {
   text("PICAPIEDRA'S BOARD", 20, 40);
 
   playBtn1 = createButton('Eso si que le puedes decir!');
-  playBtn1.position(gapX1, gapY1);
+  playBtn1.position(gapX1, gapY1 + gapY3*1);
   playBtn1.size(btnSizeX, btnSizeY);
   playBtn1.mousePressed(playSnd1);
 
   playBtn2 = createButton('Y si sigue, el problema es de ella!');
-  playBtn2.position(playBtn1.x + gapX2 + btnSizeX, gapY1);
+  playBtn2.position(gapX1 + gapX3*1, gapY1 + gapY3*1);
   playBtn2.size(btnSizeX, btnSizeY);
   playBtn2.mousePressed(playSnd2);
 
   playBtn3 = createButton('Pues si no es, no es!');
-  playBtn3.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1);
+  playBtn3.position(gapX1 + gapX3*2, gapY1 + gapY3*1);
   playBtn3.size(btnSizeX, btnSizeY);
   playBtn3.mousePressed(playSnd3);
 
+
   playBtn4 = createButton('Por ley..., no tenemos acceso!');
-  playBtn4.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1);
+  playBtn4.position(gapX1, gapY1 + gapY3*2);
   playBtn4.size(btnSizeX, btnSizeY);
   playBtn4.mousePressed(playSnd4);
 
   playBtn5 = createButton('Nos lo tiene que dar ella!');
-  playBtn5.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1);
+  playBtn5.position(gapX1 + gapX3*1, gapY1 + gapY3*2);
   playBtn5.size(btnSizeX, btnSizeY);
   playBtn5.mousePressed(playSnd5);
 
   playBtn6 = createButton('Tranquilo Nils');
-  playBtn6.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1);
+  playBtn6.position(gapX1 + gapX3*2, gapY1 + gapY3*2);
   playBtn6.size(btnSizeX, btnSizeY);
   playBtn6.mousePressed(playSnd6);
 
+
   playBtn7 = createButton('Resetea y ya está!');
-  playBtn7.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1);
+  playBtn7.position(gapX1, gapY1 + gapY3*3);
   playBtn7.size(btnSizeX, btnSizeY);
   playBtn7.mousePressed(playSnd7);
 
   playBtn8 = createButton('No pasa ná!');
-  playBtn8.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1);
+  playBtn8.position(gapX1 + gapX3*1, gapY1 + gapY3*3);
   playBtn8.size(btnSizeX, btnSizeY);
   playBtn8.mousePressed(playSnd8);
 
-
   playBtn9 = createButton('Son cosas que pasan!');
-  playBtn9.position(gapX1, gapY1 + gapY2 + btnSizeY);
+  playBtn9.position(gapX1 + gapX3*2, gapY1 + gapY3*3);
   playBtn9.size(btnSizeX, btnSizeY);
   playBtn9.mousePressed(playSnd9);
 
+
   playBtn10 = createButton('O sea!');
-  playBtn10.position(playBtn1.x + gapX2 + btnSizeX, gapY1 + gapY2 + btnSizeY);
+  playBtn10.position(gapX1, gapY1 + gapY3*4);
   playBtn10.size(btnSizeX, btnSizeY);
   playBtn10.mousePressed(playSnd10);
 
   playBtn11 = createButton('No, porque realmente no sabes!');
-  playBtn11.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + gapY2 + btnSizeY);
+  playBtn11.position(gapX1 + gapX3*1, gapY1 + gapY3*4);
   playBtn11.size(btnSizeX, btnSizeY);
   playBtn11.mousePressed(playSnd11);
 
   playBtn12 = createButton('Pero, oficialmente, no lo sabes!');
-  playBtn12.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + gapY2 + btnSizeY);
+  playBtn12.position(gapX1 + gapX3*2, gapY1 + gapY3*4);
   playBtn12.size(btnSizeX, btnSizeY);
   playBtn12.mousePressed(playSnd12);
 
+
   playBtn13 = createButton('Pero tu ahora resetea, y siguiente!');
-  playBtn13.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + gapY2 + btnSizeY);
+  playBtn13.position(gapX1, gapY1 + gapY3*5);
   playBtn13.size(btnSizeX, btnSizeY);
   playBtn13.mousePressed(playSnd13);
 
   playBtn14 = createButton('No le puedo ayudar!');
-  playBtn14.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + gapY2 + btnSizeY);
+  playBtn14.position(gapX1 + gapX3*1, gapY1 + gapY3*5);
   playBtn14.size(btnSizeX, btnSizeY);
   playBtn14.mousePressed(playSnd14);
 
   playBtn15 = createButton('Ostia!!!');
-  playBtn15.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + gapY2 + btnSizeY);
+  playBtn15.position(gapX1 + gapX3*2, gapY1 + gapY3*5);
   playBtn15.size(btnSizeX, btnSizeY);
   playBtn15.mousePressed(playSnd15);
 
+
   playBtn16 = createButton('Y ya está pues!');
-  playBtn16.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + gapY2 + btnSizeY);
+  playBtn16.position(gapX1, gapY1 + gapY3*6);
   playBtn16.size(btnSizeX, btnSizeY);
   playBtn16.mousePressed(playSnd16);
 
-
   playBtn17 = createButton('Pero eso no puede ser!');
-  playBtn17.position(gapX1, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn17.position(gapX1 + gapX3*1, gapY1 + gapY3*6);
   playBtn17.size(btnSizeX, btnSizeY);
   playBtn17.mousePressed(playSnd17);
 
   playBtn18 = createButton('Pero eso no puede ser!');
-  playBtn18.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn18.position(gapX1 + gapX3*2, gapY1 + gapY3*6);
   playBtn18.size(btnSizeX, btnSizeY);
   playBtn18.mousePressed(playSnd18);
 
+
   playBtn19 = createButton('No te puedo ayudar!');
-  playBtn19.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn19.position(gapX1, gapY1 + gapY3*7);
   playBtn19.size(btnSizeX, btnSizeY);
   playBtn19.mousePressed(playSnd19);
 
   playBtn20 = createButton('En ese momento cambió el chip!');
-  playBtn20.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn20.position(gapX1 + gapX3*1, gapY1 + gapY3*7);
   playBtn20.size(btnSizeX, btnSizeY);
   playBtn20.mousePressed(playSnd20);
 
   playBtn21 = createButton('Cierra ya Madrid, que esto no se puede!');
-  playBtn21.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn21.position(gapX1 + gapX3*2, gapY1 + gapY3*7);
   playBtn21.size(btnSizeX, btnSizeY);
   playBtn21.mousePressed(playSnd21);
 
-  playBtn22 = createButton('Le importa una mierda la salud!');
-  playBtn22.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*2);
+
+  playBtn22 = createButton('Le importa una mierda la salud, eh!');
+  playBtn22.position(gapX1, gapY1 + gapY3*8);
   playBtn22.size(btnSizeX, btnSizeY);
   playBtn22.mousePressed(playSnd22);
 
   playBtn23 = createButton('Y es por eso!');
-  playBtn23.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn23.position(gapX1 + gapX3*1, gapY1 + gapY3*8);
   playBtn23.size(btnSizeX, btnSizeY);
   playBtn23.mousePressed(playSnd23);
 
   playBtn24 = createButton('Aquí todavía no se ha llegado a esos datos!');
-  playBtn24.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*2);
+  playBtn24.position(gapX1 + gapX3*2, gapY1 + gapY3*8);
   playBtn24.size(btnSizeX, btnSizeY);
   playBtn24.mousePressed(playSnd24);
 
 
   playBtn25 = createButton('Se descontroló muchísimo!!');
-  playBtn25.position(gapX1, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn25.position(gapX1, gapY1 + gapY3*9);
   playBtn25.size(btnSizeX, btnSizeY);
   playBtn25.mousePressed(playSnd25);
 
   playBtn26 = createButton('Eh, perdonen chicos!');
-  playBtn26.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn26.position(gapX1 + gapX3*1, gapY1 + gapY3*9);
   playBtn26.size(btnSizeX, btnSizeY);
   playBtn26.mousePressed(playSnd26);
 
   playBtn27 = createButton('Me quemaron la cabeza, ya no se nada!');
-  playBtn27.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn27.position(gapX1 + gapX3*2, gapY1 + gapY3*9);
   playBtn27.size(btnSizeX, btnSizeY);
   playBtn27.mousePressed(playSnd27);
 
+
   playBtn28 = createButton('De acuerdo, entonces todo bien!');
-  playBtn28.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn28.position(gapX1, gapY1 + gapY3*10);
   playBtn28.size(btnSizeX, btnSizeY);
   playBtn28.mousePressed(playSnd28);
 
   playBtn29 = createButton('Bueno, ya fue Valen!!');
-  playBtn29.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn29.position(gapX1 + gapX3*1, gapY1 + gapY3*10);
   playBtn29.size(btnSizeX, btnSizeY);
   playBtn29.mousePressed(playSnd29);
 
   playBtn30 = createButton('Ya pasó!!');
-  playBtn30.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn30.position(gapX1 + gapX3*2, gapY1 + gapY3*10);
   playBtn30.size(btnSizeX, btnSizeY);
   playBtn30.mousePressed(playSnd30);
 
+
   playBtn31 = createButton('Yo habría hecho lo mismo!');
-  playBtn31.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn31.position(gapX1, gapY1 + gapY3*11);
   playBtn31.size(btnSizeX, btnSizeY);
   playBtn31.mousePressed(playSnd31);
 
   playBtn32 = createButton('Claro!!!');
-  playBtn32.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*3);
+  playBtn32.position(gapX1 + gapX3*1, gapY1 + gapY3*11);
   playBtn32.size(btnSizeX, btnSizeY);
   playBtn32.mousePressed(playSnd32);
 
 
   playBtn33 = createButton('Que ella decida!!');
-  playBtn33.position(gapX1, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn33.position(gapX1 + gapX3*2, gapY1 + gapY3*11);
   playBtn33.size(btnSizeX, btnSizeY);
   playBtn33.mousePressed(playSnd33);
 
+
   playBtn34 = createButton('No te preocupes, todo va a ir bien!');
-  playBtn34.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn34.position(gapX1, gapY1 + gapY3*12);
   playBtn34.size(btnSizeX, btnSizeY);
   playBtn34.mousePressed(playSnd34);
 
   playBtn35 = createButton('Tiene 2 opciones...');
-  playBtn35.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn35.position(gapX1 + gapX3*1, gapY1 + gapY3*12);
   playBtn35.size(btnSizeX, btnSizeY);
   playBtn35.mousePressed(playSnd35);
 
   playBtn36 = createButton('Actualizar...');
-  playBtn36.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn36.position(gapX1 + gapX3*2, gapY1 + gapY3*12);
   playBtn36.size(btnSizeX, btnSizeY);
   playBtn36.mousePressed(playSnd36);
 
+
   playBtn37 = createButton('Restaurar...');
-  playBtn37.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn37.position(gapX1, gapY1 + gapY3*13);
   playBtn37.size(btnSizeX, btnSizeY);
   playBtn37.mousePressed(playSnd37);
 
   playBtn38 = createButton('Me secó la cabeza ese caso, mal!!');
-  playBtn38.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn38.position(gapX1 + gapX3*1, gapY1 + gapY3*13);
   playBtn38.size(btnSizeX, btnSizeY);
   playBtn38.mousePressed(playSnd38);
 
   playBtn39 = createButton('MAL!!');
-  playBtn39.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn39.position(gapX1 + gapX3*2, gapY1 + gapY3*13);
   playBtn39.size(btnSizeX, btnSizeY);
   playBtn39.mousePressed(playSnd39);
 
+
   playBtn40 = createButton('Te juro que casi la mando a la mierda!!!');
-  playBtn40.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*4);
+  playBtn40.position(gapX1, gapY1 + gapY3*14);
   playBtn40.size(btnSizeX, btnSizeY);
   playBtn40.mousePressed(playSnd40);
 
 
   playBtn41 = createButton('40 min con la vieja!!');
-  playBtn41.position(gapX1, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn41.position(gapX1 + gapX3*1, gapY1 + gapY3*14);
   playBtn41.size(btnSizeX, btnSizeY);
   playBtn41.mousePressed(playSnd41);
 
   playBtn42 = createButton('Un quilombo fue eso!!!');
-  playBtn42.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn42.position(gapX1 + gapX3*2, gapY1 + gapY3*14);
   playBtn42.size(btnSizeX, btnSizeY);
   playBtn42.mousePressed(playSnd42);
 
+
   playBtn43 = createButton('La pasé a T2, quedate con el caso!');
-  playBtn43.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn43.position(gapX1, gapY1 + gapY3*15);
   playBtn43.size(btnSizeX, btnSizeY);
   playBtn43.mousePressed(playSnd43);
 
   playBtn44 = createButton('Nada!!');
-  playBtn44.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn44.position(gapX1 + gapX3*1, gapY1 + gapY3*15);
   playBtn44.size(btnSizeX, btnSizeY);
   playBtn44.mousePressed(playSnd44);
 
   playBtn45 = createButton('Cero paciencia!!');
-  playBtn45.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn45.position(gapX1 + gapX3*2, gapY1 + gapY3*15);
   playBtn45.size(btnSizeX, btnSizeY);
   playBtn45.mousePressed(playSnd45);
 
+
   playBtn46 = createButton('Si, quedate tranquilo, no se que...');
-  playBtn46.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn46.position(gapX1, gapY1 + gapY3*16);
   playBtn46.size(btnSizeX, btnSizeY);
   playBtn46.mousePressed(playSnd46);
 
   playBtn47 = createButton('Esa vieja.. ahhhjjj');
-  playBtn47.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn47.position(gapX1 + gapX3*1, gapY1 + gapY3*16);
   playBtn47.size(btnSizeX, btnSizeY);
   playBtn47.mousePressed(playSnd47);
 
   playBtn48 = createButton('No entendía una bosta...!');
-  playBtn48.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*5);
+  playBtn48.position(gapX1 + gapX3*2, gapY1 + gapY3*16);
   playBtn48.size(btnSizeX, btnSizeY);
   playBtn48.mousePressed(playSnd48);
 
 
   playBtn49 = createButton('Vieja grande, no entendia nada!');
-  playBtn49.position(gapX1, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn49.position(gapX1, gapY1 + gapY3*17);
   playBtn49.size(btnSizeX, btnSizeY);
   playBtn49.mousePressed(playSnd49);
 
   playBtn50 = createButton('Y un quilombo!');
-  playBtn50.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn50.position(gapX1 + gapX3*1, gapY1 + gapY3*17);
   playBtn50.size(btnSizeX, btnSizeY);
   playBtn50.mousePressed(playSnd50);
 
   playBtn51 = createButton('Estuvo 20 mil años!');
-  playBtn51.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn51.position(gapX1 + gapX3*2, gapY1 + gapY3*17);
   playBtn51.size(btnSizeX, btnSizeY);
   playBtn51.mousePressed(playSnd51);
 
+
   playBtn52 = createButton('No, un quilombo!!!');
-  playBtn52.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn52.position(gapX1, gapY1 + gapY3*18);
   playBtn52.size(btnSizeX, btnSizeY);
   playBtn52.mousePressed(playSnd52);
 
   playBtn53 = createButton('Me sacan las ganas de trabajar!');
-  playBtn53.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn53.position(gapX1 + gapX3*1, gapY1 + gapY3*18);
   playBtn53.size(btnSizeX, btnSizeY);
   playBtn53.mousePressed(playSnd53);
 
   playBtn54 = createButton('Claro, complicado, respondia así!');
-  playBtn54.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn54.position(gapX1 + gapX3*2, gapY1 + gapY3*18);
   playBtn54.size(btnSizeX, btnSizeY);
   playBtn54.mousePressed(playSnd54);
 
-  playBtn55 = createButton('NO NO NO NO NO!');
-  playBtn55.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*6);
+
+  playBtn55 = createButton('No NO NO NO!!!');
+  playBtn55.position(gapX1, gapY1 + gapY3*19);
   playBtn55.size(btnSizeX, btnSizeY);
   playBtn55.mousePressed(playSnd55);
 
   playBtn56 = createButton('No tengo otro, tiene que ser ese!');
-  playBtn56.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*6);
+  playBtn56.position(gapX1 + gapX3*1, gapY1 + gapY3*19);
   playBtn56.size(btnSizeX, btnSizeY);
   playBtn56.mousePressed(playSnd56);
 
 
   playBtn57 = createButton('Imaginate trabajar con una boluda así!');
-  playBtn57.position(gapX1, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn57.position(gapX1 + gapX3*2, gapY1 + gapY3*19);
   playBtn57.size(btnSizeX, btnSizeY);
   playBtn57.mousePressed(playSnd57);
 
+
   playBtn58 = createButton('Es imposible!');
-  playBtn58.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn58.position(gapX1, gapY1 + gapY3*20);
   playBtn58.size(btnSizeX, btnSizeY);
   playBtn58.mousePressed(playSnd58);
 
   playBtn59 = createButton('Uhhh, chicos, no se que hacer!');
-  playBtn59.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn59.position(gapX1 + gapX3*1, gapY1 + gapY3*20);
   playBtn59.size(btnSizeX, btnSizeY);
   playBtn59.mousePressed(playSnd59);
 
   playBtn60 = createButton('No entiendo nada de la vida!');
-  playBtn60.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn60.position(gapX1 + gapX3*2, gapY1 + gapY3*20);
   playBtn60.size(btnSizeX, btnSizeY);
   playBtn60.mousePressed(playSnd60);
 
+
   playBtn61 = createButton('Pero saben qué?');
-  playBtn61.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn61.position(gapX1, gapY1 + gapY3*21);
   playBtn61.size(btnSizeX, btnSizeY);
   playBtn61.mousePressed(playSnd61);
 
   playBtn62 = createButton('No me importa, son las 8!');
-  playBtn62.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn62.position(gapX1 + gapX3*1, gapY1 + gapY3*21);
   playBtn62.size(btnSizeX, btnSizeY);
   playBtn62.mousePressed(playSnd62);
 
   playBtn63 = createButton('Disfruten su sabado, muchas gracias...!');
   //playBtn63.style('font-size', 10);
-  playBtn63.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn63.position(gapX1 + gapX3*2, gapY1 + gapY3*21);
   playBtn63.size(btnSizeX, btnSizeY);
   playBtn63.mousePressed(playSnd63);
 
+
   playBtn64 = createButton('SSSiiii!!');
-  playBtn64.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*7);
+  playBtn64.position(gapX1, gapY1 + gapY3*22);
   playBtn64.size(btnSizeX, btnSizeY);
   playBtn64.mousePressed(playSnd64);
 
-
   playBtn65 = createButton('Psiiii!');
-  playBtn65.position(gapX1, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn65.position(gapX1 + gapX3*1, gapY1 + gapY3*22);
   playBtn65.size(btnSizeX, btnSizeY);
   playBtn65.mousePressed(playSnd65);
 
   playBtn66 = createButton('Ehhhh!');
-  playBtn66.position(playBtn1.x + (gapX2 + btnSizeX)*1, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn66.position(gapX1 + gapX3*2, gapY1 + gapY3*22);
   playBtn66.size(btnSizeX, btnSizeY);
   playBtn66.mousePressed(playSnd66);
 
+
   playBtn67 = createButton('Claro!');
-  playBtn67.position(playBtn1.x + (gapX2 + btnSizeX)*2, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn67.position(gapX1, gapY1 + gapY3*23);
   playBtn67.size(btnSizeX, btnSizeY);
   playBtn67.mousePressed(playSnd67);
 
   playBtn68 = createButton('Pero ahora esa esta cerrada!');
-  playBtn68.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn68.position(gapX1 + gapX3*1, gapY1 + gapY3*23);
   playBtn68.size(btnSizeX, btnSizeY);
   playBtn68.mousePressed(playSnd68);
 
   playBtn69 = createButton('Y yo le hice un mail-in!');
-  playBtn69.position(playBtn1.x + (gapX2 + btnSizeX)*4, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn69.position(gapX1 + gapX3*2, gapY1 + gapY3*23);
   playBtn69.size(btnSizeX, btnSizeY);
   playBtn69.mousePressed(playSnd69);
+
 
   playBtn70 = createButton('Ya no se!');
   //playBtn70.style('font-size', 10);
   //playBtn70.style('text-align', 'left');
-  playBtn70.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn70.position(gapX1, gapY1 + gapY3*24);
   playBtn70.size(btnSizeX, btnSizeY);
   playBtn70.mousePressed(playSnd70);
 
   playBtn71 = createButton('---');
-  playBtn71.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn71.position(gapX1 + gapX3*1, gapY1 + gapY3*24);
   playBtn71.size(btnSizeX, btnSizeY);
   //playBtn71.mousePressed(playSnd71);
 
   playBtn72 = createButton('---');
-  playBtn72.position(playBtn1.x + (gapX2 + btnSizeX)*7, gapY1 + (gapY2 + btnSizeY)*8);
+  playBtn72.position(gapX1 + gapX3*2, gapY1 + gapY3*24);
   playBtn72.size(btnSizeX, btnSizeY);
   //playBtn72.mousePressed(playSnd72);
 }
