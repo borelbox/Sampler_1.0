@@ -7,7 +7,7 @@ var canvX = 0;
 var canvY = 0;
 
 var gapX1 = canvX + 20;
-var gapY1 = canvY + 50;
+var gapY1 = canvY + 10;
 var gapX2 = 4;
 var gapY2 = 4;
 var btnSizeX = 120;
@@ -108,10 +108,10 @@ function setup() {
   background(30);
 
   textSize(30);
-  fill(100);
-  textFont('Helvetica');
+  fill(200);
+  textFont('Arial');
   textAlign(CENTER, CENTER);
-  text("TOP BOARD", canvas.width/2, 40);
+  text("TOP BOARD(ER)", canvas.width/2, 40);
 
 
   playBtn1 = createButton('Eso si que le puedes decir!');
