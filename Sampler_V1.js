@@ -2,7 +2,7 @@
 //PICAPIEDRA'S BOARD
 var canvas;
 var canvW = 410;
-var canvH = 2000;
+var canvH = 1620;
 var canvX = 0;
 var canvY = 0;
 
