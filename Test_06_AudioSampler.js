@@ -211,7 +211,7 @@ function setup() {
   playBtn21.size(btnSizeX, btnSizeY);
   playBtn21.mousePressed(playSnd21);
 
-  playBtn22 = createButton('Le importa una mierda la salud, eh!');
+  playBtn22 = createButton('Le importa una mierda la salud!');
   playBtn22.position(playBtn1.x + (gapX2 + btnSizeX)*5, gapY1 + (gapY2 + btnSizeY)*2);
   playBtn22.size(btnSizeX, btnSizeY);
   playBtn22.mousePressed(playSnd22);
@@ -380,7 +380,7 @@ function setup() {
   playBtn54.size(btnSizeX, btnSizeY);
   playBtn54.mousePressed(playSnd54);
 
-  playBtn55 = createButton('No NO NO NO!!!');
+  playBtn55 = createButton('NO NO NO NO NO!');
   playBtn55.position(playBtn1.x + (gapX2 + btnSizeX)*6, gapY1 + (gapY2 + btnSizeY)*6);
   playBtn55.size(btnSizeX, btnSizeY);
   playBtn55.mousePressed(playSnd55);
