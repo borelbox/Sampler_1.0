@@ -6,7 +6,7 @@ var gapX1 = 20;
 var gapY1 = 50;
 var gapX2 = 4;
 var gapY2 = 4;
-var btnSizeX = 100;
+var btnSizeX = 120;
 var btnSizeY = 60;
 
 function loaded() {
