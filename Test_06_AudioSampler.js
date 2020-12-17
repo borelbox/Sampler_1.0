@@ -396,7 +396,7 @@ function setup() {
   playBtn54.mousePressed(playSnd54);
 
 
-  playBtn55 = createButton('No NO NO NO!!!');
+  playBtn55 = createButton('NO NO NO NO NO!');
   playBtn55.position(gapX1, gapY1 + gapY3*19);
   playBtn55.size(btnSizeX, btnSizeY);
   playBtn55.mousePressed(playSnd55);
