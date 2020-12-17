@@ -98,13 +98,15 @@ function preload() {
 
 
 function setup() {
-  createCanvas(411, 2000);
+  var canvas = createCanvas(412, 2000);
   background(0);
 
   textSize(30);
   fill(100);
   textFont('Helvetica');
-  text("PICAPIEDRA'S BOARD", 20, 40);
+  textAlign(CENTER,CENTER);
+  text("PICAPIEDRA'S BOARD", canvas.width/2, 40);
+
 
   playBtn1 = createButton('Eso si que le puedes decir!');
   playBtn1.position(gapX1, gapY1 + gapY3*1);
