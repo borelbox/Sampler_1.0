@@ -102,7 +102,7 @@ function setup() {
   textSize(30);
   fill(100);
   textFont('Helvetica');
-  text("PICAPIEDRA'S BOARD ROOM", 20, 40);
+  text("PICAPIEDRA'S BOARD ROOM 1", 20, 40);
 
   playBtn1 = createButton('Eso si que le puedes decir!');
   playBtn1.position(gapX1, gapY1);
