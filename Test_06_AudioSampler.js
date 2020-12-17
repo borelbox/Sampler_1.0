@@ -96,7 +96,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(870, 800);
+  createCanvas(1030, 800);
   background(0);
 
   textSize(30);
