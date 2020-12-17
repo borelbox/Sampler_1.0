@@ -119,7 +119,7 @@ function setup() {
   playBtn3.size(btnSizeX, btnSizeY);
   playBtn3.mousePressed(playSnd3);
 
-  playBtn4 = createButton('Por ley de protección de datos, no tenemos acceso!');
+  playBtn4 = createButton('Por ley..., no tenemos acceso!');
   playBtn4.position(playBtn1.x + (gapX2 + btnSizeX)*3, gapY1);
   playBtn4.size(btnSizeX, btnSizeY);
   playBtn4.mousePressed(playSnd4);
