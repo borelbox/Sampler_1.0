@@ -1,5 +1,5 @@
 //https://github.com/borelbox/Sampler_1.0.git
-//PICAPIEDRA'S BOARD 20201220 B
+//PICAPIEDRA'S BOARD 20201220 BC
 var canvas;
 var canvW = 410;
 var canvH = 1620;
@@ -505,266 +505,266 @@ function setup() {
 }
 
 
-function playSnd1() { 
-  if (!s1.isPlaying()) { 
+function playSnd1() {
+  if (!s1.isPlaying()) {
     s1.play();
-  } else { 
+  } else {
     s1.stop();
   }
 }
 
-function playSnd2() { 
-  if (!s2.isPlaying()) { 
+function playSnd2() {
+  if (!s2.isPlaying()) {
     s2.play();
-  } else { 
+  } else {
     s2.stop();
   }
 }
 
-function playSnd3() { 
-  if (!s3.isPlaying()) { 
+function playSnd3() {
+  if (!s3.isPlaying()) {
     s3.play();
-  } else { 
+  } else {
     s3.stop();
   }
 }
 
-function playSnd4() { 
-  if (!s4.isPlaying()) { 
+function playSnd4() {
+  if (!s4.isPlaying()) {
     s4.play();
-  } else { 
+  } else {
     s4.stop();
   }
 }
 
-function playSnd5() { 
-  if (!s5.isPlaying()) { 
+function playSnd5() {
+  if (!s5.isPlaying()) {
     s5.play();
-  } else { 
+  } else {
     s5.stop();
   }
 }
 
-function playSnd6() { 
-  if (!s6.isPlaying()) { 
+function playSnd6() {
+  if (!s6.isPlaying()) {
     s6.play();
-  } else { 
+  } else {
     s6.stop();
   }
 }
 
-function playSnd7() { 
-  if (!s7.isPlaying()) { 
+function playSnd7() {
+  if (!s7.isPlaying()) {
     s7.play();
-  } else { 
+  } else {
     s7.stop();
   }
 }
 
-function playSnd8() { 
-  if (!s8.isPlaying()) { 
+function playSnd8() {
+  if (!s8.isPlaying()) {
     s8.play();
-  } else { 
+  } else {
     s8.stop();
   }
 }
 
-function playSnd9() { 
-  if (!s9.isPlaying()) { 
+function playSnd9() {
+  if (!s9.isPlaying()) {
     s9.play();
-  } else { 
+  } else {
     s9.stop();
   }
 }
 
-function playSnd10() { 
-  if (!s10.isPlaying()) { 
+function playSnd10() {
+  if (!s10.isPlaying()) {
     s10.play();
-  } else { 
+  } else {
     s10.stop();
   }
 }
 
-function playSnd11() { 
-  if (!s11.isPlaying()) { 
+function playSnd11() {
+  if (!s11.isPlaying()) {
     s11.play();
-  } else { 
+  } else {
     s11.stop();
   }
 }
 
-function playSnd12() { 
-  if (!s12.isPlaying()) { 
+function playSnd12() {
+  if (!s12.isPlaying()) {
     s12.play();
-  } else { 
+  } else {
     s12.stop();
   }
 }
 
-function playSnd13() { 
-  if (!s13.isPlaying()) { 
+function playSnd13() {
+  if (!s13.isPlaying()) {
     s13.play();
-  } else { 
+  } else {
     s13.stop();
   }
 }
 
-function playSnd14() { 
-  if (!s14.isPlaying()) { 
+function playSnd14() {
+  if (!s14.isPlaying()) {
     s14.play();
-  } else { 
+  } else {
     s14.stop();
   }
 }
 
-function playSnd15() { 
-  if (!s15.isPlaying()) { 
+function playSnd15() {
+  if (!s15.isPlaying()) {
     s15.play();
-  } else { 
+  } else {
     s15.stop();
   }
 }
 
-function playSnd16() { 
-  if (!s16.isPlaying()) { 
+function playSnd16() {
+  if (!s16.isPlaying()) {
     s16.play();
-  } else { 
+  } else {
     s16.stop();
   }
 }
 
-function playSnd17() { 
-  if (!s17.isPlaying()) { 
+function playSnd17() {
+  if (!s17.isPlaying()) {
     s17.play();
-  } else { 
+  } else {
     s17.stop();
   }
 }
 
-function playSnd18() { 
-  if (!s18.isPlaying()) { 
+function playSnd18() {
+  if (!s18.isPlaying()) {
     s18.play();
-  } else { 
+  } else {
     s18.stop();
   }
 }
 
-function playSnd19() { 
-  if (!s19.isPlaying()) { 
+function playSnd19() {
+  if (!s19.isPlaying()) {
     s19.play();
-  } else { 
+  } else {
     s19.stop();
   }
 }
 
-function playSnd20() { 
-  if (!s20.isPlaying()) { 
+function playSnd20() {
+  if (!s20.isPlaying()) {
     s20.play();
-  } else { 
+  } else {
     s20.stop();
   }
 }
 
-function playSnd21() { 
-  if (!s21.isPlaying()) { 
+function playSnd21() {
+  if (!s21.isPlaying()) {
     s21.play();
-  } else { 
+  } else {
     s21.stop();
   }
 }
 
-function playSnd22() { 
-  if (!s22.isPlaying()) { 
+function playSnd22() {
+  if (!s22.isPlaying()) {
     s22.play();
-  } else { 
+  } else {
     s22.stop();
   }
 }
 
-function playSnd23() { 
-  if (!s23.isPlaying()) { 
+function playSnd23() {
+  if (!s23.isPlaying()) {
     s23.play();
-  } else { 
+  } else {
     s23.stop();
   }
 }
 
-function playSnd24() { 
-  if (!s24.isPlaying()) { 
+function playSnd24() {
+  if (!s24.isPlaying()) {
     s24.play();
-  } else { 
+  } else {
     s24.stop();
   }
 }
 
-function playSnd25() { 
-  if (!s25.isPlaying()) { 
+function playSnd25() {
+  if (!s25.isPlaying()) {
     s25.play();
-  } else { 
+  } else {
     s25.stop();
   }
 }
 
-function playSnd26() { 
-  if (!s26.isPlaying()) { 
+function playSnd26() {
+  if (!s26.isPlaying()) {
     s26.play();
-  } else { 
+  } else {
     s26.stop();
   }
 }
 
-function playSnd27() { 
-  if (!s27.isPlaying()) { 
+function playSnd27() {
+  if (!s27.isPlaying()) {
     s27.play();
-  } else { 
+  } else {
     s27.stop();
   }
 }
 
-function playSnd28() { 
-  if (!s28.isPlaying()) { 
+function playSnd28() {
+  if (!s28.isPlaying()) {
     s28.play();
-  } else { 
+  } else {
     s28.stop();
   }
 }
 
-function playSnd29() { 
-  if (!s29.isPlaying()) { 
+function playSnd29() {
+  if (!s29.isPlaying()) {
     s29.play();
-  } else { 
+  } else {
     s29.stop();
   }
 }
 
-function playSnd30() { 
-  if (!s30.isPlaying()) { 
+function playSnd30() {
+  if (!s30.isPlaying()) {
     s30.play();
-  } else { 
+  } else {
     s30.stop();
   }
 }
 
-function playSnd31() { 
-  if (!s31.isPlaying()) { 
+function playSnd31() {
+  if (!s31.isPlaying()) {
     s31.play();
-  } else { 
+  } else {
     s31.stop();
   }
 }
 
-function playSnd32() { 
-  if (!s32.isPlaying()) { 
+function playSnd32() {
+  if (!s32.isPlaying()) {
     s32.play();
-  } else { 
+  } else {
     s32.stop();
   }
 }
 
-function playSnd33() { 
-  if (!s33.isPlaying()) { 
+function playSnd33() {
+  if (!s33.isPlaying()) {
     s33.play();
-  } else { 
+  } else {
     s33.stop();
   }
 }
