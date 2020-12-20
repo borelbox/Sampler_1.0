@@ -1,5 +1,5 @@
 //https://github.com/borelbox/Sampler_1.0.git
-//PICAPIEDRA'S BOARD
+//PICAPIEDRA'S BOARD 20201220
 var canvas;
 var canvW = 410;
 var canvH = 1620;
